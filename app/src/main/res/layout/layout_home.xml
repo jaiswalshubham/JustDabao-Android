@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/bg_card">
+    <ImageView
+        android:id="@+id/home_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/img_icecream_1"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_below="@id/home_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleBlack.H2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="Desert"/>
+        <TextView
+            android:id="@+id/pickup_type"
+            android:layout_below="@id/product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleBlack.H5"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/bg_button"
+            android:text="SameDay Pickup"/>
+        <TextView
+            android:layout_toRightOf="@id/product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleBlack.H2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="$ 7.9"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleBlack.H5"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:text="2 Km from Indiranagar"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

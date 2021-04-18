@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".splash.FeatureScreenFragment">
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/app_icon"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DABAO"
+        android:layout_below="@id/splash_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
