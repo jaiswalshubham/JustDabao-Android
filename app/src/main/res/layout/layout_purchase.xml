@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="@dimen/_30sdp"
+        style="@style/CustomTextStyleBlack.H4"
+        android:layout_gravity="center"
+        android:text="	Bakery (Chinatown - 1 min 🚶🏻‍♂️ from Chinatown MRT)"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        style="@style/CustomTextStyleBlack.H4"
+        android:text="$23"
+        android:textSize="@dimen/_14ssp"/>
+
+
+</LinearLayout>

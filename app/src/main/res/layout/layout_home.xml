@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/_220sdp"
     android:layout_marginTop="@dimen/_10sdp"
+    android:id="@+id/home_card_rl"
     android:background="@drawable/bg_card">
     <ImageView
         android:id="@+id/home_img"
@@ -36,6 +37,7 @@
             android:background="@drawable/bg_button"
             android:text="SameDay Pickup"/>
         <TextView
+            android:id="@+id/price"
             android:layout_toRightOf="@id/product_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,6 +46,7 @@
             android:textSize="@dimen/_12ssp"
             android:text="$ 7.9"/>
         <TextView
+            android:id="@+id/distance_from_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/CustomTextStyleBlack.H5"

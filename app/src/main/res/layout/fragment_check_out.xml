@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.CheckOutFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/purchase_details_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/sub_total"
+        android:layout_below="@id/purchase_details_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        style="@style/CustomTextStyleBlack.H5"
+        android:text="SubTotal : $54"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/payment_initiated_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            style="@style/CustomTextStyleBlack.H1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_solid_button"
+            android:text="Check Out &amp; Pay $54"
+            android:gravity="center"
+            android:textColor="@color/whitish_grey"/>
+    </LinearLayout>
+
+</RelativeLayout>

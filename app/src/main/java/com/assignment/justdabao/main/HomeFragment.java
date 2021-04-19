@@ -12,6 +12,12 @@ import android.view.ViewGroup;
 
 import com.assignment.justdabao.R;
 import com.assignment.justdabao.main.adapter.HomeAdapter;
+import com.assignment.justdabao.main.models.RestaurantsModel;
+import com.assignment.justdabao.utils.Constants;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.List;
 
 
 public class HomeFragment extends Fragment {
@@ -34,7 +40,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void setAdapter() {
-        homeAdapter = new HomeAdapter(getActivity());
+        homeAdapter = new HomeAdapter(getActivity(),new Gson().fromJson(Constants.DUMMY_DATA, new TypeToken<List<RestaurantsModel>>(){}.getType()));
         homeRecycler.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false));
         homeRecycler.setAdapter(homeAdapter);
     }
