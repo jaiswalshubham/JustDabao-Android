@@ -6,6 +6,7 @@
     android:layout_margin="@dimen/_10sdp"
     android:weightSum="2">
     <TextView
+        android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_weight="1.5"
         android:layout_height="@dimen/_30sdp"
@@ -14,6 +15,7 @@
         android:text="	Bakery (Chinatown - 1 min 🚶🏻‍♂️ from Chinatown MRT)"/>
 
     <TextView
+        android:id="@+id/price"
         android:layout_width="0dp"
         android:layout_weight="0.5"
         android:layout_height="wrap_content"

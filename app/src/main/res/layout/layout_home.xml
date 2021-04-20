@@ -47,7 +47,7 @@
             android:text="$ 7.9"/>
         <TextView
             android:id="@+id/distance_from_location"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_120sdp"
             android:layout_height="wrap_content"
             style="@style/CustomTextStyleBlack.H5"
             android:layout_marginLeft="@dimen/_20sdp"
@@ -55,7 +55,9 @@
             android:layout_marginRight="@dimen/_20sdp"
             android:textStyle="normal"
             android:layout_centerVertical="true"
-            android:text="2 Km from Indiranagar"/>
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text=""/>
 
     </RelativeLayout>
 

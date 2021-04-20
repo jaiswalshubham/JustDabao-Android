@@ -7,14 +7,14 @@ public class Constants {
     public static final String PREF_IS_APP_LAUNCHED = "PREF_IS_APP_LAUNCHED";
     public static final String DUMMY_DATA = " [\n" +
             "    {\n" +
-            "      \"id\": \"1232\",\n" +
+            "      \"id\": \"123223\",\n" +
             "      \"title\": \"Kueh\",\n" +
             "      \"shortDescription\": \"Foodfilling food & bakes are created with numerous cravings, favorites, years of perfecting the taste. Choice of ingredients used are the healthier and lower calorie option while still enjoying the deliciousness of the food. Foodfilling believes in eating well and living well and be happy and enjoy eating times together with family and friends!\",\n" +
             "      \"rating\": \"0\",\n" +
             "      \"lat\": \"12.9355\",\n" +
             "      \"lng\": \"77.6141\",\n" +
             "      \"image_url\": \"https://cdn.shopify.com/s/files/1/0302/0714/8116/products/WhatsAppImage2021-04-15at21.03.06.jpg\",\n" +
-            "      \"avg_price\": \"7.9\",\n" +
+            "      \"avg_price\": \"8.1\",\n" +
             "      \"pickUpType\": \"Same Day\"\n" +
             "    },\n" +
             "    {\n" +
@@ -36,7 +36,7 @@ public class Constants {
             "      \"lat\": \"12.9202\",\n" +
             "      \"lng\": \"77.6515\",\n" +
             "      \"image_url\": \"https://cdn.shopify.com/s/files/1/0302/0714/8116/products/210820-BBS_0022.jpg\",\n" +
-            "      \"avg_price\": \"7.9\",\n" +
+            "      \"avg_price\": \"11.3\",\n" +
             "      \"pickUpType\": \"PreOrder Available\"\n" +
             "    },\n" +
             "    {\n" +
@@ -47,9 +47,10 @@ public class Constants {
             "      \"lat\": \"12.991016\",\n" +
             "      \"lng\": \"77.652436\",\n" +
             "      \"image_url\": \"https://cdn.shopify.com/s/files/1/0302/0714/8116/products/IMG_1581_2bf975de-8d65-4f41-9cbc-aa5ce0ffec09.jpg?\",\n" +
-            "      \"avg_price\": \"7.9\",\n" +
+            "      \"avg_price\": \"10.5\",\n" +
             "      \"pickUpType\": \"PreOrder Available\"\n" +
             "    }\n" +
             "  ]";
 
+    public static final String ADDED_ITEM = "ADDED_ITEM";
 }

@@ -12,6 +12,7 @@ public class RestaurantsModel implements Serializable {
     String image_url;
     String avg_price;
     String pickUpType;
+    int quantity;
 
 
     @Override
@@ -99,5 +100,13 @@ public class RestaurantsModel implements Serializable {
 
     public void setPickUpType(String pickUpType) {
         this.pickUpType = pickUpType;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

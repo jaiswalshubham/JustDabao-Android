@@ -17,6 +17,7 @@ import com.assignment.justdabao.MainActivity;
 import com.assignment.justdabao.R;
 import com.assignment.justdabao.main.CheckInFragment;
 import com.assignment.justdabao.main.models.RestaurantsModel;
+import com.assignment.justdabao.utils.GPSTracker;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -69,7 +70,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                 Log.e("TAG", e.getLocalizedMessage());
             }
         });
-
+        GPSTracker gpsTracker = new GPSTracker(context);
+        if(gpsTracker.getLocation() != null){
+            holder.distanceFromLocaiton.setText(GPSTracker.distance(gpsTracker.getLatitude(),gpsTracker.getLongitude(),restaurantsModels.get(position).getLat(),restaurantsModels.get(position).getLng() ) +"Km from  " + ((MainActivity)context).getAddress());
+        }
     }
 
     @Override

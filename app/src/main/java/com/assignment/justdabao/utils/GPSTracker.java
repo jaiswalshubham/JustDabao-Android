@@ -34,6 +34,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 import static com.google.android.gms.location.LocationServices.getFusedLocationProviderClient;
@@ -385,7 +386,7 @@ public class GPSTracker extends AppCompatActivity implements LocationListener{
     }
 
 
-    public static double distance(double lat1,
+    public static String distance(double lat1,
                                   double lon1,double lat2,
                                   double lon2)
     {
@@ -394,7 +395,7 @@ public class GPSTracker extends AppCompatActivity implements LocationListener{
         // named toRadians which converts from
         // degrees to radians.
         if((lat1 == lat2) && (lon1 == lon2))
-            return 0.0;
+            return "0.0";
         lon1 = Math.toRadians(lon1);
         lon2 = Math.toRadians(lon2);
         lat1 = Math.toRadians(lat1);
@@ -415,7 +416,8 @@ public class GPSTracker extends AppCompatActivity implements LocationListener{
 
         // calculate the result
         double result = c * r;
-        return result;
+        DecimalFormat df = new DecimalFormat("###.##");
+        return df.format(result/10000);
     }
 
 

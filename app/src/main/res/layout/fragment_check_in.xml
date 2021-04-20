@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 style="@style/CustomTextStyleBlack.H1"
-                android:text="1"
+                android:text="0"
                 android:gravity="center"/>
             <ImageView
                 android:id="@+id/quantityIncrease"
@@ -83,6 +83,50 @@
         android:textColor="@color/black"
         android:layout_margin="@dimen/_10sdp"
         android:text="Pick up: Daily from 8.45pm-9.20pm"/>
+    <LinearLayout
+        android:id="@+id/price_details"
+        android:layout_below="@id/pick_up_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleGrey.H3"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Price "/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleGrey.H3"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="right"
+            android:text="$23"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/total_amountlat"
+        android:layout_below="@id/price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleGrey.H3"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Total "/>
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextStyleGrey.H3"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="right"
+            android:text="0"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
